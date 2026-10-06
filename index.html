@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planetary Explorer</title>
+    <link rel="stylesheet" href="capStone.css" />
+  </head>
+  <body>
+    <!-- HTML Structure -->
+    <header class="header">
+      <div class="container">
+        <a href="/" class="logo">Planetary Explorer</a>
+        <div class="subHeader">
+          <form class="search-form">
+            <label for="search-form">Search Planet</label>
+
+            <input
+              type="search"
+              id="search-form"
+              name="search-form"
+              placeholder="Search planet....."
+            />
+
+            <button type="button" class="color-changer" id="color-changer">
+              Theme
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <article class="planet-card">
+            <figure class="planet-image">
+              <img id="planet-image" src="" alt="Planet" />
+            </figure>
+            <div class="planet-details">
+              <p id="planet-type" class="planet-type">Planet Type</p>
+
+              <h1 id="planet-name">Planet Name</h1>
+
+              <p id="planet-description">
+                Planet description will appear here.
+              </p>
+            </div>
+
+            <div class="planet-statistics">
+              <div class="stat">
+                <span class="stat-label"> Distance from Sun </span>
+
+                <strong id="planet-distance"> — </strong>
+              </div>
+
+              <div class="stat">
+                <span class="stat-label"> Mass </span>
+
+                <strong id="planet-mass"> — </strong>
+              </div>
+
+              <div class="stat">
+                <span class="stat-label"> Diameter </span>
+
+                <strong id="planet-diameter"> — </strong>
+              </div>
+
+              <div class="stat">
+                <span class="stat-label"> Period </span>
+
+                <strong id="planet-period"> — </strong>
+              </div>
+
+              <div class="stat">
+                <span class="stat-label"> Temperature </span>
+
+                <strong id="planet-temperature"> — </strong>
+              </div>
+
+              <div class="stat">
+                <span class="stat-label"> Gravity </span>
+
+                <strong id="planet-gravity"> — </strong>
+              </div>
+
+              <div class="stat">
+                <span class="stat-label"> Moons </span>
+
+                <strong id="planet-moons"> — </strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="planet-facts">
+        <div class="container">
+          <h2>Planetary Facts at a Glance</h2>
+
+          <div class="table-wrapper">
+            <table>
+              <caption>
+                A comparison of planetary characteristics in our solar system.
+              </caption>
+
+              <thead>
+                <tr>
+                  <th scope="col">Planet</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Distance</th>
+                  <th scope="col">Mass</th>
+                  <th scope="col">Diameter</th>
+                  <th scope="col">Period</th>
+                  <th scope="col">Temperature</th>
+                  <th scope="col">Gravity</th>
+                  <th scope="col">Moons</th>
+                </tr>
+              </thead>
+
+              <tbody id="planet-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <section class="footer-about">
+          <h2>About</h2>
+
+          <p>
+            A planetary information application built as part of the TS Academy
+            capstone project.
+          </p>
+        </section>
+
+        <section class="footer-team">
+          <h2>Team</h2>
+
+          <p>
+            Our team worked collaboratively to build this planetary information
+            application.
+          </p>
+        </section>
+
+        <section class="footer-links">
+          <h2>Links</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://tsacademyonline.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                TS Academy
+              </a>
+            </li>
+
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Group Repository
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      git config --global user.email "gnewstechnologies@gmail.com"
+      <p class="copyright">&copy; 2026 Planetary Explorer.</p>
+    </footer>
+  </body>
+  <script src="capStone.js"></script>
+</html>
